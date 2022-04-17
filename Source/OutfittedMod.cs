@@ -205,11 +205,12 @@ namespace Outfitted
                 var targetRange = outfit.targetTemperatures;
                 var apparelOffset = GetInsulationStats(apparel);
 
-                // effect of this piece of apparel
-                candidateRange.min += apparelOffset.min;
-                candidateRange.max += apparelOffset.max;
                 if(!currentlyWorn)
                 {
+                    // effect of this piece of apparel
+                    candidateRange.min += apparelOffset.min;
+                    candidateRange.max += apparelOffset.max;
+
                     foreach (var otherApparel in pawn.apparel.WornApparel)
                     {
                         // effect of taking off any other apparel that is incompatible
