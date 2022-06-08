@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <PenaltyWornByCorpse>Разрешить одежду с трупов</PenaltyWornByCorpse>
+  <PenaltyWornByCorpseTooltip>Учитывать одежду с трупов</PenaltyWornByCorpseTooltip>
+
+  <AutoWorkPriorities>Автоматическиq Приоритет работы</AutoWorkPriorities>
+  <AutoWorkPrioritiesTooltip>Если включено, автоматически добавляются вещи, которые имеют отношение к назначенным типам работ.</AutoWorkPrioritiesTooltip>
+  
+  <PreferedTemperature>Диапазон температур</PreferedTemperature>
+  <TemperatureRangeReset>Сброс температурного диапазона до сезонной температуры</TemperatureRangeReset>
+  
+  <AutoTemp>Автоматический температурный диапазон</AutoTemp>
+  <AutoTempTooltip>Если включено, автоматически установится диапазон температур на текущую сезонную температуру плюс смещение</AutoTempTooltip>
+
+  <AutoTempOffset>Смещение температуры</AutoTempOffset>
+  <AutoTempOffsetTooltip>Отклонение в градусах для использования в качестве буфера вокруг текущей сезонной температуры</AutoTempOffsetTooltip>
+  
+  <PreferedStats>Приоритет характеристик</PreferedStats>
+  
+  <StatPriorityAdd>Добавить новый приоритет</StatPriorityAdd>
+  <StatPriorityReset>Сбросить приоритет для {0} на приоритеты шаблона</StatPriorityReset>
+  <StatPriorityDelete>Удалить приоритет для {0}</StatPriorityDelete>
+
+  <OutfitShow>Переключить счет одежды для выбранного колониста.</OutfitShow>
+  
+  <!-- Outfits -->
+  <OutfitDoctor>Врач</OutfitDoctor>
+  <OutfitWarden>Надзиратель</OutfitWarden>
+  <OutfitHandler>Животновод</OutfitHandler>
+  <OutfitCook>Повар</OutfitCook>
+  <OutfitHunter>Охотник</OutfitHunter>
+  <OutfitBuilder>Строитель</OutfitBuilder>
+  <OutfitGrower>Садовод</OutfitGrower>
+  <OutfitMiner>Горняк</OutfitMiner>
+  <OutfitSmith>Кузнец</OutfitSmith>
+  <OutfitTailor>Портной</OutfitTailor>
+  <OutfitArtist>Художник</OutfitArtist>
+  <OutfitCrafter>Ремесленник</OutfitCrafter>
+  <OutfitHauler>Носильщик</OutfitHauler>
+  <OutfitCleaner>Уборщик</OutfitCleaner>
+  <OutfitResearcher>Исследователь</OutfitResearcher>
+  <OutfitBrawler>Боец</OutfitBrawler>
+  
+</LanguageData>
