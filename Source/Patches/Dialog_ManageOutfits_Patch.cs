@@ -301,6 +301,7 @@ namespace Outfitted
             Rect labelRect = new Rect(cur.x, cur.y, (width - 24) / 2f, 30f);
             Rect sliderRect = new Rect(labelRect.xMax + 4f, cur.y + 5f, labelRect.width, 25f);
             Rect buttonRect = new Rect(sliderRect.xMax + 4f, cur.y + 3f, 16f, 16f);
+            Rect bgRect = new Rect(cur.x, cur.y, (width - 24), 30f + 3);
 
             // draw label
             Text.Font = Text.CalcHeight(statPriority.Stat.LabelCap, labelRect.width) > labelRect.height
@@ -308,11 +309,12 @@ namespace Outfitted
                             : GameFont.Small;
 
             GUI.color = Widgets.WindowBGFillColor;
-            GUI.DrawTexture(labelRect, (Texture)BaseContent.WhiteTex);
+            GUI.DrawTexture(bgRect, (Texture)BaseContent.WhiteTex);
 
             GUI.color = AssigmentColor(statPriority);
 
             Widgets.Label(labelRect, statPriority.Stat.LabelCap);
+            
             Text.Font = GameFont.Small;
 
             // draw button
