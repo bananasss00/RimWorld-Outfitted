@@ -8,6 +8,11 @@ using Verse;
 
 namespace Outfitted
 {
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct)]
+    public class HotSwappableAttribute : Attribute
+    {
+    }
+
     [StaticConstructorOnStartup]
     public static class OutfittedMod
     {

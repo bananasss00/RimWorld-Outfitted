@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-  <PenaltyWornByCorpse>Разрешить одежду с трупов</PenaltyWornByCorpse>
-  <PenaltyWornByCorpseTooltip>Учитывать одежду с трупов</PenaltyWornByCorpseTooltip>
+  <PenaltyWornByCorpse>Штраф на одежду с трупов</PenaltyWornByCorpse>
+  <PenaltyWornByCorpseTooltip>Должна ли одежда с трупа учитываться в расчетах?</PenaltyWornByCorpseTooltip>
 
-  <AutoWorkPriorities>Автоматическиq Приоритет работы</AutoWorkPriorities>
+  <AutoWorkPriorities>Автоматический Приоритет работы</AutoWorkPriorities>
   <AutoWorkPrioritiesTooltip>Если включено, автоматически добавляются вещи, которые имеют отношение к назначенным типам работ.</AutoWorkPrioritiesTooltip>
   
   <PreferedTemperature>Диапазон температур</PreferedTemperature>

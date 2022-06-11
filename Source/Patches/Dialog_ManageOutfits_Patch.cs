@@ -11,14 +11,17 @@ using Verse;
 
 namespace Outfitted
 {
+    [HotSwappable]
     [HarmonyPatch(typeof(Dialog_ManageOutfits), nameof(Dialog_ManageOutfits.DoWindowContents))]
     static class Dialog_ManageOutfits_DoWindowContents_Patch
     {
+        const float marginCloneButton = 40f;
+
         const float marginVertical = 10f;
 
         const float marginLeft = 320f;
         const float marginRight = 10f;
-        const float marginTop = 10f;
+        const float marginTop = 75f;
         const float marginBottom = 55f;
 
         const float MaxValue = 2.5f;
@@ -89,7 +92,7 @@ namespace Outfitted
 
         static void DrawCloneButton(ExtendedOutfit selectedOutfit)
         {
-            Rect rect = new Rect(480, 0f, 150f, 35f);
+            Rect rect = new Rect(marginLeft, Dialog_ManageOutfits.TopAreaHeight + marginCloneButton, 150f, 35f);
             if (Widgets.ButtonText(rect, "CommandCopyZoneSettingsLabel".Translate(), true, true, true))
             {
                 if (selectedOutfit == null) {
@@ -303,6 +306,9 @@ namespace Outfitted
             Text.Font = Text.CalcHeight(statPriority.Stat.LabelCap, labelRect.width) > labelRect.height
                             ? GameFont.Tiny
                             : GameFont.Small;
+
+            GUI.color = Widgets.WindowBGFillColor;
+            GUI.DrawTexture(labelRect, (Texture)BaseContent.WhiteTex);
 
             GUI.color = AssigmentColor(statPriority);
 
